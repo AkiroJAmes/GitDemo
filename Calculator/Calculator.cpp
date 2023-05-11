@@ -2,6 +2,7 @@
 
 float Add(float a, float b);
 float Divide(float a, float b);
+float Multiply(float a, float b);
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
 
     std::cout << a << " + " << b << " = " << Add(a, b);
     std::cout << a << " / " << b << " = " << Divide(a, b);
+    std::cout << a << " * " << b << " = " << Multiply(a, b);
 }
 
 float Add(float a, float b) { 
@@ -23,4 +25,8 @@ float Add(float a, float b) {
 
 float Divide(float a, float b) {
     return a / b;
+}
+
+float Multiply(float a, float b) { 
+    return a * b; 
 }
